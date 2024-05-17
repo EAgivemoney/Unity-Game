@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Floor
   - Goblin
+  - Wall
+  - Lava
+  - Key
   layers:
   - Default
   - TransparentFX

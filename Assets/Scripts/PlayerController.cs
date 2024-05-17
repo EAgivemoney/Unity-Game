@@ -57,4 +57,17 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
         }
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Lava"))
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Debug.Log("Player has died");
+    }
 }
