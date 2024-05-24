@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|c:\\users\\meije\\unity zip\\freezeflame fortress\\unity-game\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|c:\\users\\meije\\unity zip\\freezeflame fortress\\unity-game\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|c:\\users\\meije\\unity zip\\freezeflame fortress\\unity-game\\assets\\scripts\\lava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\assets\\scripts\\lava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lava.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|c:\\users\\meije\\unity zip\\freezeflame fortress\\unity-game\\assets\\scripts\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|c:\\users\\meije\\unity zip\\freezeflame fortress\\unity-game\\assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\assets\\scripts\\ice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Key.cs",
+              "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Key.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Key.cs",
+              "ToolTip": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Key.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Key.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T08:08:28.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Door.cs",
+              "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Door.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Door.cs",
+              "ToolTip": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Door.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Door.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T08:08:25.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ice.cs",
+              "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Ice.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Ice.cs",
+              "ToolTip": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Ice.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Ice.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T07:11:05.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Lava.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Lava.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lava.cs",
               "ToolTip": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Lava.cs",
               "RelativeToolTip": "Assets\\Scripts\\Lava.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T07:08:43.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAgwEYAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T06:59:01.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Enemy.cs",
-              "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Enemy.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy.cs",
-              "ToolTip": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Enemy.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemy.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAF0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T06:58:58.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CameraFollow.cs",
-              "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\CameraFollow.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
-              "ToolTip": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\CameraFollow.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T21:07:30.373Z",
               "EditorCaption": ""
             }
           ]

@@ -362,7 +362,10 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.1.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/Door.cs"
 "Assets/Scripts/Enemy.cs"
+"Assets/Scripts/Ice.cs"
+"Assets/Scripts/Key.cs"
 "Assets/Scripts/Lava.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:9.0

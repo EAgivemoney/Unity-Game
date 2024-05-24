@@ -9,6 +9,9 @@ TagManager:
   - Wall
   - Lava
   - Key
+  - Ice
+  - Exit
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

@@ -7,9 +7,12 @@ public class PlayerController : MonoBehaviour
     public float walkSpeed = 10f;
     public float runSpeed = 30f;
     public float jumpForce = 10f;
+    public float iceControlFactor = 0.3f;
 
     private Rigidbody2D rb;
     private bool isGrounded = true;
+    private bool onIce = false;
+    public bool keyCollected = false;
 
     private void Start()
     {
@@ -21,14 +24,8 @@ public class PlayerController : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
 
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            rb.velocity = new Vector2(moveHorizontal * runSpeed, rb.velocity.y);
-        }
-        else
-        {
-            rb.velocity = new Vector2(moveHorizontal * walkSpeed, rb.velocity.y);
-        }
+        float currentSpeed = onIce ? walkSpeed * iceControlFactor : (Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed);
+        rb.velocity = new Vector2(moveHorizontal * currentSpeed, rb.velocity.y);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
@@ -38,23 +35,37 @@ public class PlayerController : MonoBehaviour
 
     void Jump()
     {
-        isGrounded = false;
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        isGrounded = false;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.GetComponent<Ice>() != null)
+        {
+            isGrounded = true;
+            onIce = collision.gameObject.GetComponent<Ice>() != null;
+        }
     }
 
     void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor"))
+        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.GetComponent<Ice>() != null)
         {
             isGrounded = true;
+            onIce = collision.gameObject.GetComponent<Ice>() != null;
         }
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor"))
+        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.GetComponent<Ice>() != null)
         {
             isGrounded = false;
+            if (collision.gameObject.GetComponent<Ice>() != null)
+            {
+                onIce = false;
+            }
         }
     }
 
