@@ -7,12 +7,14 @@ public class PlayerController : MonoBehaviour
     public float walkSpeed = 10f;
     public float runSpeed = 30f;
     public float jumpForce = 10f;
-    public float iceControlFactor = 0.3f;
 
     private Rigidbody2D rb;
     private bool isGrounded = true;
     private bool onIce = false;
     public bool keyCollected = false;
+
+    private float normalFriction = 0.4f;
+    private float iceControlFactor = 1f;
 
     private void Start()
     {
@@ -41,30 +43,49 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.GetComponent<Ice>() != null)
+        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.GetComponent<IcePhysics>() != null)
         {
             isGrounded = true;
-            onIce = collision.gameObject.GetComponent<Ice>() != null;
+            if (collision.gameObject.GetComponent<IcePhysics>() != null)
+            {
+                onIce = true;
+                ApplyIcePhysics(collision.gameObject.GetComponent<IcePhysics>());
+            }
+            else
+            {
+                onIce = false;
+                ApplyNormalPhysics();
+            }
         }
     }
 
     void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.GetComponent<Ice>() != null)
+        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.GetComponent<IcePhysics>() != null)
         {
             isGrounded = true;
-            onIce = collision.gameObject.GetComponent<Ice>() != null;
+            if (collision.gameObject.GetComponent<IcePhysics>() != null)
+            {
+                onIce = true;
+                ApplyIcePhysics(collision.gameObject.GetComponent<IcePhysics>());
+            }
+            else
+            {
+                onIce = false;
+                ApplyNormalPhysics();
+            }
         }
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.GetComponent<Ice>() != null)
+        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.GetComponent<IcePhysics>() != null)
         {
             isGrounded = false;
-            if (collision.gameObject.GetComponent<Ice>() != null)
+            if (collision.gameObject.GetComponent<IcePhysics>() != null)
             {
                 onIce = false;
+                ApplyNormalPhysics();
             }
         }
     }
@@ -75,6 +96,22 @@ public class PlayerController : MonoBehaviour
         {
             Die();
         }
+    }
+
+    void ApplyIcePhysics(IcePhysics ice)
+    {
+        iceControlFactor = ice.iceControlFactor;
+        var material = rb.sharedMaterial;
+        material.friction = ice.iceFriction;
+        rb.sharedMaterial = material;
+    }
+
+    void ApplyNormalPhysics()
+    {
+        iceControlFactor = 1f;
+        var material = rb.sharedMaterial;
+        material.friction = normalFriction;
+        rb.sharedMaterial = material;
     }
 
     void Die()
