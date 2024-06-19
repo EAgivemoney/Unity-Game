@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|c:\\users\\meije\\unity zip\\freezeflame fortress\\unity-game\\assets\\scripts\\returntotitle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|c:\\users\\meije\\unity zip\\freezeflame fortress\\unity-game\\assets\\scripts\\goblinspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goblinspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\assets\\scripts\\returntotitle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\returntotitle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\titlescreensound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|c:\\users\\meije\\unity zip\\freezeflame fortress\\unity-game\\assets\\scripts\\next level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\assets\\scripts\\next level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\next level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -51,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\assets\\scripts\\goblinspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\goblinspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\assets\\scripts\\icephysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8B35018-E5EB-994C-554D-775E388850FD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\icephysics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -82,11 +82,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ReturnToTitle.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\ReturnToTitle.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ReturnToTitle.cs",
@@ -94,12 +94,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ReturnToTitle.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAwA8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T06:45:31.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T06:45:31.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "VictorySound.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\VictorySound.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\VictorySound.cs",
@@ -111,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TitleScreenSound.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\TitleScreenSound.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TitleScreenSound.cs",
@@ -119,12 +118,11 @@
               "RelativeToolTip": "Assets\\Scripts\\TitleScreenSound.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T05:59:22.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T05:59:22.531Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Start Game.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Start Game.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Start Game.cs",
@@ -132,24 +130,24 @@
               "RelativeToolTip": "Assets\\Scripts\\Start Game.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T07:09:13.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T07:09:13.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "GoblinSpawner.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\GoblinSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GoblinSpawner.cs",
               "ToolTip": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\GoblinSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\GoblinSpawner.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAYwFoAAAAFAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAIwAwAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T19:08:59.34Z"
+              "WhenOpened": "2024-06-18T19:08:59.34Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
@@ -161,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Fireball.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Fireball.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Fireball.cs",
@@ -185,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Staff.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Staff.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Staff.cs",
@@ -197,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LivesDisplay.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\LivesDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LivesDisplay.cs",
@@ -209,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Game Over.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Game Over.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game Over.cs",
@@ -221,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Next Level.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Next Level.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Next Level.cs",
@@ -229,12 +227,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Next Level.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T08:18:02.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-18T08:18:02.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Key.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Key.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Key.cs",
@@ -246,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Door.cs",
               "DocumentMoniker": "C:\\Users\\meije\\Unity ZIP\\Freezeflame Fortress\\Unity-Game\\Assets\\Scripts\\Door.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Door.cs",

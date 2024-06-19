@@ -9,13 +9,13 @@ public class GoblinSpawner : MonoBehaviour
     public GameObject goblinPrefab;
     public Transform leftTowerSpawnPoint;
     public Transform rightTowerSpawnPoint;
-    public int goblinsToSpawnPerTower = 5;
-    public float spawnInterval = 2f;
+    public int goblinsToSpawnPerTower = 4;
+    public float spawnInterval = 3f;
 
     public AudioClip goblinDeathSound;
     public AudioClip victorySound;
 
-    private readonly int totalGoblins = 10;
+    private readonly int totalGoblins = 8;
     private List<Goblin> activeGoblins = new List<Goblin>(); // List to track active goblins
     private bool canSpawn = false;
     private int goblinsSpawned = 0; // Counter for spawned goblins

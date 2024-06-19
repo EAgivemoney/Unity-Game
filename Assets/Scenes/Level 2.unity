@@ -1643,8 +1643,8 @@ MonoBehaviour:
   goblinPrefab: {fileID: 8980564159530472321, guid: eab6b5180dea0834296fc638e8975e06, type: 3}
   leftTowerSpawnPoint: {fileID: 624615713}
   rightTowerSpawnPoint: {fileID: 1525683991}
-  goblinsToSpawnPerTower: 5
-  spawnInterval: 2
+  goblinsToSpawnPerTower: 4
+  spawnInterval: 3
   goblinDeathSound: {fileID: 8300000, guid: 7a2e3d5e28d6e7b4dadc1d47ae6ec105, type: 3}
   victorySound: {fileID: 8300000, guid: a7fb0a16fd231aa4a8e1a9e2a62f3fb8, type: 3}
 --- !u!82 &710601046
