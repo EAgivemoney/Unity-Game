@@ -9,10 +9,11 @@ public class Lava : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
-
-
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            PlayerController player = other.GetComponent<PlayerController>();
+            if (!player.isTakingDamage) // Ensure that the player is not already taking damage
+            {
+                player.Die();
+            }
         }
     }
 }

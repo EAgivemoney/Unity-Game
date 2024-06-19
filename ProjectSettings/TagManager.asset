@@ -12,6 +12,8 @@ TagManager:
   - Ice
   - Exit
   - Checkpoint
+  - Fireball
+  - Staff
   layers:
   - Default
   - TransparentFX

@@ -5,23 +5,13 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public Transform target;
-    public Vector3 offset = new Vector3(0f, 2f, -5f);
-    public float zoomFactor = 1.0f;
-    public float zoomSpeed = 2.0f;
-    public float minZoom = 1.0f;
-    public float maxZoom = 5.0f;
+    public Vector3 offset = new Vector3(0f, 3f, -10f);
 
     private void LateUpdate()
     {
         if (target != null)
         {
-            float scroll = Input.GetAxis("Mouse ScrollWheel");
-            zoomFactor -= scroll * zoomSpeed;
-            zoomFactor = Mathf.Clamp(zoomFactor, minZoom, maxZoom);
-
-            Vector3 zoomedOffset = offset * zoomFactor;
-
-            transform.position = target.position + zoomedOffset;
+            transform.position = target.position + offset;
             transform.LookAt(target);
         }
     }

@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public Animation hingehere;
+    public Animation hingeAnimation;
+    private bool isOpen = false;
 
-    void Update()
+    public void KeyCollected()
     {
-        if (Input.GetKey(KeyCode.E))
-            hingehere.Play();
+        if (!isOpen)
+        {
+            OpenDoor();
+        }
+    }
+
+    public void OpenDoor()
+    {
+        hingeAnimation.Play();
+        isOpen = true;
     }
 }

@@ -9,6 +9,8 @@ public class StartGame : MonoBehaviour
 
     public void loadLevel()
     {
+        PlayerController.lives = 5;
+
         SceneManager.LoadScene(levelName);
     }
 }

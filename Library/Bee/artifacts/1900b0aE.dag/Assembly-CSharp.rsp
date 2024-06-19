@@ -364,11 +364,18 @@
 "Assets/Scripts/CameraFollow.cs"
 "Assets/Scripts/Door.cs"
 "Assets/Scripts/Enemy.cs"
+"Assets/Scripts/Fireball.cs"
+"Assets/Scripts/Game Over.cs"
+"Assets/Scripts/Goblin.cs"
+"Assets/Scripts/GoblinSpawner.cs"
 "Assets/Scripts/Ice.cs"
 "Assets/Scripts/IcePhysics.cs"
 "Assets/Scripts/Key.cs"
 "Assets/Scripts/Lava.cs"
+"Assets/Scripts/LivesDisplay.cs"
+"Assets/Scripts/Next Level.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/Staff.cs"
 "Assets/Scripts/Start Game.cs"
 -langversion:9.0
 
