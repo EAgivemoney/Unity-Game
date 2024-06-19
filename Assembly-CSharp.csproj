@@ -69,10 +69,13 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Next Level.cs" />
     <Compile Include="Assets\Scripts\LivesDisplay.cs" />
+    <Compile Include="Assets\Scripts\ReturnToTitle.cs" />
     <Compile Include="Assets\Scripts\Game Over.cs" />
+    <Compile Include="Assets\Scripts\VictorySound.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\IcePhysics.cs" />
+    <Compile Include="Assets\Scripts\TitleScreenSound.cs" />
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Fireball.cs" />

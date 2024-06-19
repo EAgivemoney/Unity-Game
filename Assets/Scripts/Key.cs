@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Key : MonoBehaviour
 {
@@ -13,18 +10,8 @@ public class Key : MonoBehaviour
             if (playerController != null)
             {
                 playerController.CollectKey();
-                NotifyDoor();
-                Destroy(gameObject);
+                Destroy(gameObject); // Destroy the key after collection
             }
-        }
-    }
-
-    public void NotifyDoor()
-    {
-        Door door = UnityEngine.Object.FindFirstObjectByType<Door>();
-        if (door != null)
-        {
-            door.KeyCollected();
         }
     }
 }

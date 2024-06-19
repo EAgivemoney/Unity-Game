@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    public AudioClip gameOverSound;
+    private AudioSource audioSource;
     private void Start()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = gameOverSound;
+        audioSource.Play();
+
         StartCoroutine(LoadTitleSceneAfterDelay(2.5f));
     }
 

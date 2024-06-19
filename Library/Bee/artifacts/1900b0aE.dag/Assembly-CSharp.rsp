@@ -375,8 +375,11 @@
 "Assets/Scripts/LivesDisplay.cs"
 "Assets/Scripts/Next Level.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/ReturnToTitle.cs"
 "Assets/Scripts/Staff.cs"
 "Assets/Scripts/Start Game.cs"
+"Assets/Scripts/TitleScreenSound.cs"
+"Assets/Scripts/VictorySound.cs"
 -langversion:9.0
 
 /deterministic

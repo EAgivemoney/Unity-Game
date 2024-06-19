@@ -1,11 +1,11 @@
 sceneSetups:
 - path: Assets/Scenes/Title.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scenes/Level 1.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/Level 1.unity
+  isLoaded: 0
+  isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Level 2.unity
   isLoaded: 0
@@ -16,6 +16,10 @@ sceneSetups:
   isActive: 0
   isSubScene: 0
 - path: Assets/Scenes/Finish.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/Controls.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0

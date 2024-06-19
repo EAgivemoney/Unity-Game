@@ -639,7 +639,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4646870875984101487}
-  - component: {fileID: 3927862620518730745}
   - component: {fileID: 1773396165418368747}
   - component: {fileID: 575434972234422795}
   m_Layer: 0
@@ -670,22 +669,6 @@ Transform:
   - {fileID: 8269563638779758556}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
---- !u!111 &3927862620518730745
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8991400439604635323}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: a84a4e40f2b169d4b9104e7732e799c4, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!114 &1773396165418368747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -698,6 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a2387b377b0ad0478c3fd1799f086c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keySound: {fileID: 0}
 --- !u!61 &575434972234422795
 BoxCollider2D:
   m_ObjectHideFlags: 0

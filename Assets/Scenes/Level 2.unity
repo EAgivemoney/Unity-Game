@@ -7816,7 +7816,6 @@ GameObject:
   - component: {fileID: 1555880142}
   - component: {fileID: 1555880141}
   - component: {fileID: 1555880140}
-  - component: {fileID: 1555880139}
   - component: {fileID: 1555880138}
   m_Layer: 0
   m_Name: Player
@@ -7921,18 +7920,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1555880139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1555880137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8602b6f147cdba64b93454b56ec9b2c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1555880140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8062,12 +8049,14 @@ MonoBehaviour:
   fireballSpawnPoint: {fileID: 1555880146}
   hasStaff: 0
   isTakingDamage: 0
+  keyCollected: 0
   jumpSound: {fileID: 8300000, guid: b2250630f165dc047ad560b77ede3b0c, type: 3}
   dashSound: {fileID: 8300000, guid: 38917b68e7b699e409cc8a5dde1d4ecc, type: 3}
   fireballSound: {fileID: 8300000, guid: 5cc7cc6a9d9f16646a7821a707b3c496, type: 3}
-  gameOVerSound: {fileID: 8300000, guid: 3bb628cceb27da04d9e02ca409f76910, type: 3}
+  gameOverSound: {fileID: 8300000, guid: 3bb628cceb27da04d9e02ca409f76910, type: 3}
   levelTheme: {fileID: 8300000, guid: 7f540c766a304cf4ea14643b4a9d1500, type: 3}
   bossFightMusic: {fileID: 8300000, guid: 89b88f0a87d13424989d9257315cec8c, type: 3}
+  keySound: {fileID: 0}
 --- !u!23 &1555880144
 MeshRenderer:
   m_ObjectHideFlags: 0

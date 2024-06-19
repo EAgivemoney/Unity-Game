@@ -9,7 +9,6 @@ public class NextLevel : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player touched the Next Level object");
             SceneManager.LoadScene("Level 2");
         }
     }

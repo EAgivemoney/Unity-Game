@@ -16,19 +16,19 @@ public class PlayerController : MonoBehaviour
     public bool hasStaff = false;
     public static event Action OnStaffCollected;
     public bool isTakingDamage = false;
+    public bool keyCollected = false; // Make this public so it can be accessed
 
     public AudioClip jumpSound;
     public AudioClip dashSound;
-    public AudioClip keySound;
     public AudioClip fireballSound;
-    public AudioClip gameOVerSound;
+    public AudioClip gameOverSound;
     public AudioClip levelTheme;
     public AudioClip bossFightMusic;
+    public AudioClip keySound; // Add key sound
 
     private Rigidbody2D rb;
     private bool isGrounded = true;
     private bool onIce = false;
-    private bool keyCollected = false;
     private float normalFriction = 0.4f;
     private float iceControlFactor = 1f; // Default control factor
     private float iceFriction = 0.4f; // Default friction
@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
     private float lastFireballTime = -1.5f;
 
     private GoblinSpawner goblinSpawner;
+    private Door door; // Add reference to door
 
     void Start()
     {
@@ -62,7 +63,7 @@ public class PlayerController : MonoBehaviour
 
         soundEffects = gameObject.AddComponent<AudioSource>();
 
-        PlayerController.OnStaffCollected += HandleStaffCollected;
+        PlayerController.OnStaffCollected += SwitchToBossFightMusic;
 
         if (isFirstLoad)
         {
@@ -71,6 +72,7 @@ public class PlayerController : MonoBehaviour
         }
 
         goblinSpawner = UnityEngine.Object.FindFirstObjectByType<GoblinSpawner>();
+        door = UnityEngine.Object.FindFirstObjectByType<Door>(); // Initialize door reference
     }
 
     void Update()
@@ -110,7 +112,6 @@ public class PlayerController : MonoBehaviour
 
     void HandleStaffCollected()
     {
-        Debug.Log("Staff collected. Switching to Boss Fight music.");
         hasStaff = true;
 
         if (bossFightMusic != null)
@@ -121,10 +122,12 @@ public class PlayerController : MonoBehaviour
 
     void SwitchToBossFightMusic()
     {
-        Debug.Log("Switching to Boss Fight music.");
-        backgroundMusic.Stop();
-        backgroundMusic.clip = bossFightMusic;
-        backgroundMusic.Play();
+        if (bossFightMusic != null)
+        {
+            backgroundMusic.Stop();
+            backgroundMusic.clip = bossFightMusic;
+            backgroundMusic.Play();
+        }
     }
 
     IEnumerator Boost()
@@ -220,26 +223,6 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(TakeDamageFromLava());
         }
-        if (other.CompareTag("Staff"))
-        {
-            hasStaff = true;
-            OnStaffCollected?.Invoke(); // Trigger event for collecting staff
-            Destroy(other.gameObject); // Destroy the staff object in the scene
-        }
-        if (other.CompareTag("Key"))
-        {
-            CollectKey();
-            PlayKeySound();
-            Destroy(other.gameObject);
-        }
-    }
-
-    void PlayKeySound()
-    {
-        if (keySound != null)  
-        {
-            AudioSource.PlayClipAtPoint(keySound, transform.position);
-        }
     }
 
     IEnumerator TakeDamageFromLava()
@@ -279,11 +262,20 @@ public class PlayerController : MonoBehaviour
         {
             goblinSpawner.SpawnGoblins();
         }
+
+        OnStaffCollected?.Invoke();
     }
 
     public void CollectKey()
     {
         keyCollected = true;
+        soundEffects.PlayOneShot(keySound); // Play the key collection sound
+
+        // Notify the door about key collection
+        if (door != null)
+        {
+            door.KeyCollected();
+        }
     }
 
     public void Die()
@@ -309,9 +301,9 @@ public class PlayerController : MonoBehaviour
 
     void PlayGameOverSoundEffect()
     {
-        if (gameOVerSound != null)
+        if (gameOverSound != null)
         {
-            AudioSource.PlayClipAtPoint(gameOVerSound, transform.position);
+            AudioSource.PlayClipAtPoint(gameOverSound, transform.position);
         }
     }
 
@@ -322,7 +314,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
-        PlayerController.OnStaffCollected -= HandleStaffCollected;
+        PlayerController.OnStaffCollected -= SwitchToBossFightMusic;
     }
 
     public void TakeDamage()
